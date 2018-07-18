@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:background="#fff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/character_count"
+                android:text="4.7"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_toRightOf="@+id/character_count"
+                android:text="万字"
+                android:textColor="#000"
+                android:textSize="12sp"
+                android:layout_alignBottom="@+id/character_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded" />
+
+            <TextView
+                android:layout_below="@+id/character_count"
+                android:textSize="10sp"
+                android:layout_marginLeft="12dp"
+                android:text="连载"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/click_count"
+                android:text="3440"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_below="@+id/click_count"
+                android:textSize="10sp"
+                android:text="点击"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/recommend_count"
+                android:text="240"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_below="@+id/recommend_count"
+                android:textSize="10sp"
+                android:text="推荐票"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/month_count"
+                android:text="0"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_below="@+id/month_count"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:text="月票"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@+id/ll1"
+        android:background="#ddd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1px"/>
+
+    <com.lcodecore.extextview.ExpandTextView
+        android:id="@+id/description"
+        android:layout_below="@+id/line1"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="他是天生缺少一魂一魄的炼魂废渣，在这个以神魂修为为尊的世界里，他没有一席之位。然而机缘巧合之下他得到远古炼体秘籍，开辟了一条走向炼体巅峰的道路。他一路上扮猪吃老虎，为了给自己多一些成长的时间，也同时为了不给家族带来灭顶之灾。"
+        android:textColor="#555"
+        android:textSize="16sp"
+        app:arrowAlign="center"
+        app:arrowPadding="8dp"
+        app:arrowPosition="below"
+        app:maxCollapsedLines="3"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_below="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="目录"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:text="连载至"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="29"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="章"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="  .  "
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="5"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:text="小时前更新"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignoe="HardcodedText" />
+
+            <ImageView
+                android:src="@drawable/right_arrow_gray"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/head"
+            android:src="@drawable/head"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_toRightOf="@+id/head"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:id="@+id/authorname3"
+            android:text="旺旺小小苏2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:layout_toRightOf="@+id/head"
+            android:layout_below="@+id/authorname3"
+            android:layout_marginLeft="5dp"
+            android:textSize="11sp"
+            android:id="@+id/info1"
+            android:text="共著有3部作品"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/authorname3"
+            android:text="作家"
+            android:padding="1dp"
+            android:textSize="11sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/round_conor"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_below="@+id/rl2"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:text="粉丝榜"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:layout_below="@+id/t1"
+            android:textSize="11sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:text="成为本书第一个粉丝吧"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl4"
+        android:layout_below="@+id/rl3"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="书评"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/comment_count"
+            android:layout_toLeftOf="@+id/t2"
+            android:layout_centerVertical="true"
+            android:text="8"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+        <TextView
+            android:id="@+id/t2"
+            android:layout_centerVertical="true"
+            android:text="条"
+            android:layout_toLeftOf="@+id/i1"
+            android:textSize="11sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText,RtlHardcoded,SmallSp" />
+
+        <ImageView
+            android:id="@+id/i1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_gray"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/comment_parent"
+        android:layout_below="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
