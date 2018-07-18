@@ -227,3 +227,13 @@ final NovelDetailTitleBarPage novel=findViewById(R.id.novel);
 </manifest>
 ```
 因为加载小说封面用到网络，需要在manifest文件中添加网络权限。
+## 5.项目中用到的外部依赖
+```Java
+    //状态栏透明
+    implementation 'com.jaeger.statusbarutil:library:1.5.1'
+    //网络加载
+    implementation 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    //对话框
+    implementation 'com.zaaach:toprightmenu:1.0'
+```
+在你的项目中需要用到这些功能的可以不需要额外添加依赖
